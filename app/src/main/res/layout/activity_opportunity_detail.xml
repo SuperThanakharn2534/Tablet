@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_White">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_White"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                tools:ignore="UselessLeaf,UselessParent">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@color/background_White"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                tools:ignore="DisableBaselineAlignment,UselessLeaf">
+
+                <LinearLayout
+                    android:id="@+id/OppCol1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical"
+                    tools:ignore="RtlHardcoded">
+
+                    <EditText
+                        android:id="@+id/txtOpportunityNo "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="PPID"
+                        android:inputType="textPersonName"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText,NestedWeights" />
+
+                    <EditText
+                        android:id="@+id/txtFirstName "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="ชื่อ*"
+                        android:inputType="textPersonName"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_dark"
+                        tools:ignore="HardcodedText,TextFields" />
+
+                    <EditText
+                        android:id="@+id/txtLastName "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="นามสกุล*"
+                        android:inputType="textPersonName"
+                        android:textAllCaps="false"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/txtCardNo "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="เลขบัตรประชาชน*"
+                        android:inputType="date"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_dark"
+                        tools:ignore="HardcodedText" />
+
+                    <EditText
+                        android:id="@+id/txtPhoneNumber1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="เบอร์โทรศัพท์*"
+                        android:inputType="textPersonName"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_dark"
+                        tools:ignore="HardcodedText,TextFields" />
+
+                    <EditText
+                        android:id="@+id/txtPhoneNumeber2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="เบอร์โทรศัพท์2*"
+                        android:inputType="textPersonName"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText,TextFields" />
+
+                    <EditText
+                        android:id="@+id/txtemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="E-Mail"
+                        android:inputType="textPersonName"
+                        android:textAllCaps="false"
+                        tools:ignore="HardcodedText,TextFields" />
+
+                    <EditText
+                        android:id="@+id/txtLineid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Line ID"
+                        android:inputType="textPersonName"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/OppCol2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@color/background_White"
+                    android:orientation="vertical"
+                    tools:ignore="InefficientWeight,RtlHardcoded">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="0.2"
+                            android:background="@android:color/background_light"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:weightSum="1">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/txtaddress"
+                                android:layout_width="400dp"
+                                android:layout_height="73dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.2"
+                                android:background="@color/mainbrackground"
+                                android:hint="ที่อยู่"
+                                android:textAlignment="textStart"
+                                android:textAllCaps="false"
+                                android:textSize="24sp"
+                                tools:ignore="HardcodedText,NestedWeights" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@android:color/background_light"
+                            android:gravity="center_vertical|center"
+                            android:orientation="horizontal"
+                            android:padding="2dp"
+                            android:weightSum="1">
+
+                            <Spinner
+                                android:id="@+id/spinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.2"
+                                android:gravity="center"
+                                tools:ignore="InefficientWeight" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/background_light"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="2dp"
+                            android:weightSum="1">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/txtcomment"
+                                android:layout_width="400dp"
+                                android:layout_height="73dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.2"
+                                android:background="@color/mainbrackground"
+                                android:hint="หมายเหตุ"
+                                android:textAlignment="textStart"
+                                android:textAllCaps="false"
+                                android:textSize="24sp"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            tools:ignore="InefficientWeight,UselessParent">
+
+                            <TextView
+                                android:id="@+id/textView39"
+                                android:layout_width="wrap_content"
+                                android:layout_height="60dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="0.47"
+                                android:background="@color/background_White"
+                                android:gravity="center"
+                                android:text="แนบรูป  :"
+                                android:textAlignment="center"
+                                android:textColor="@color/cardview_dark_background"
+                                android:textSize="@dimen/text_size"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText,NestedWeights,SpUsage" />
+
+                            <Button
+                                android:id="@+id/button7"
+                                android:layout_width="233dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/button"
+                                android:text="Browse file"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="24sp"
+                                tools:ignore="HardcodedText,NestedWeights,SpUsage" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="0.57"
+                                tools:ignore="NestedWeights" />
+
+                            <Button
+                                android:id="@+id/btclick"
+                                android:layout_width="233dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/button"
+                                android:text="ทำรายการต่อ"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText,SpUsage" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        tools:ignore="RtlHardcoded">
+
+                        <TextView
+                            android:id="@+id/textView46"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/background_light"
+                            android:gravity="center_vertical"
+                            android:padding="5dp"
+                            android:text="     ข้อมูลลูกค้าผู้มุ่งหวัง "
+                            android:textAlignment="textStart"
+                            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+                            android:textSize="@dimen/textlink"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,InefficientWeight,SpUsage" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="238dp"
+                        android:layout_weight="6.38"
+                        android:background="@color/background_White"
+                        android:weightSum="1"
+                        tools:ignore="InefficientWeight"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView45"
+                            android:layout_width="match_parent"
+                            android:layout_height="33dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/common_google_signin_btn_text_light_default"
+                            android:gravity="center_vertical"
+                            android:text="ผลิตภัณฑ์ที่แนะนำลูกค้า"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/background_light"
+                            android:textSize="@dimen/text_size"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,NestedWeights,SpUsage" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:id="@+id/FLName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:text="ชื่อ-นามสกุล"
+                                android:textAlignment="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/ID_Card"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:text="เลขบัตรประชาชน"
+                                android:textAlignment="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/PhoneNumber"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:text="เบอร์โทรศัพท์"
+                                android:textAlignment="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/Province"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:text="จังหวัด"
+                                android:textAlignment="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:id="@+id/E_mail"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:text="E-Mail"
+                                android:textAlignment="center"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/opportunitydatalist"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="0.66"
+                            tools:ignore="NestedScrolling,NestedWeights" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton2"
+                android:layout_width="58dp"
+                android:layout_height="57dp"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                app:backgroundTint="@color/colorPrimary"
+                app:elevation="0dp"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/pluse"
+                tools:ignore="NestedWeights,RtlHardcoded" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/menu_bg"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/menu_bg"
+            app:srcCompat="@drawable/editpassword"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView15"
+            android:gravity="bottom"
+            android:text="Somsee  Jaidee"
+            android:textAlignment="center"
+            android:textColor="@color/background_White"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView172"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView91"
+            android:gravity="center_vertical"
+            android:text="รหัส  : 09876"
+            android:textAlignment="center"
+            android:textColor="@color/background_White"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView89"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView172"
+            android:text="ทีมลูก  :  น้ำโขง"
+            android:textAlignment="center"
+            android:textColor="@color/background_White"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView89"
+            android:layout_marginBottom="30dp"
+            android:text="สาขา  :  หนองบัวลำภู"
+            android:textAlignment="center"
+            android:textColor="@color/background_White"
+            tools:ignore="HardcodedText" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textView90"
+            android:layout_gravity="left"
+            android:background="@color/menu_bg"
+            android:divider="@null"
+            android:entries="@array/CustomerMenu"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded">
+
+        </ListView>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

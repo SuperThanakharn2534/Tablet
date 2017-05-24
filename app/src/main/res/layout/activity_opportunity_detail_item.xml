@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="DisableBaselineAlignment,Orientation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        tools:ignore="InefficientWeight,UselessParent">
+
+        <TextView
+            android:id="@+id/fl_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,NestedWeights" />
+
+        <TextView
+            android:id="@+id/ID_Card"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/PhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/Province"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/E_Mail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/Percent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</LinearLayout>

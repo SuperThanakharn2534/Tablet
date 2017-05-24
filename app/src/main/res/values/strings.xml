@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">SiamSmileMobileApplication</string>
+    <string name="password">PASSWORD :</string>
+    <string name="username">USERNAME :</string>
+    <string name="name">Name</string>
+    <string name="open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+    <string name="error_field_required">กรุณากรอกข้อมูลให้ถูกต้องกรุณากรอกใหม่</string>
+    <string name="error_invalid_password">รหัสผ่านของคุณมีจำนวนน้อยเกินไปกรุณากรอกใหม่ </string>
+
+
+    <string-array name="CustomerMenu">
+        <item> - ข้อมูลลูกค้าผู้มุ่งหวัง / ปิดการขาย</item>
+        <item> - บริการเครมสุขภาพ On Mobile </item>
+        <item> - จัดเก็บเบี้ย</item>
+        <item> - ประกาศ / ข้อมูลการแบ่งขาย</item>
+        <item> - ข้อมูลเพิ่มเติม</item>
+        <item> - ข้อมูลเสนอแนะ / ร้องเรียน</item>
+        <item> - แก้ไข Password</item>
+        <item> Log Out </item>
+
+    </string-array>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_nav_">SiamSmile Mobile Application</string>
+    <string name="textview135">ระบุการเจ็บป่วย/บาดเจ็บที่ได้รับ (ในกรณีบาดเจ็บให้บรรยายการเกิดอุบัติเหตุโดยระเอียด)  :</string>
+
+
+
+</resources>

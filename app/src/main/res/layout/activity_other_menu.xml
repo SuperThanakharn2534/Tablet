@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:id="@+id/drawerLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8E8E8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView132"
+                    android:layout_width="493dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.13"
+                    android:background="@color/common_google_signin_btn_text_light_default"
+                    android:gravity="center_vertical"
+                    android:text="ติดต่อ Call Center"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="392dp"
+                    android:background="@android:color/background_light"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/call3" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView136"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.13"
+                    android:background="@color/common_google_signin_btn_text_light_default"
+                    android:gravity="center_vertical"
+                    android:text="ค้นหาที่ตั้งสาขา"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="392dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/background_light"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/map2" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/menu_bg"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/menu_bg"
+            app:srcCompat="@drawable/editpassword"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView15"
+            android:gravity="bottom"
+            android:text="Somsee  Jaidee"
+            android:textAlignment="center"
+            android:textColor="@color/background_White"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView172"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView91"
+            android:gravity="center_vertical"
+            android:text="รหัส  : 09876"
+            android:textAlignment="center"
+            android:textColor="@color/background_White"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView89"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView172"
+            android:text="ทีมลูก  :  น้ำโขง"
+            android:textAlignment="center"
+            android:textColor="@color/background_White"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView89"
+            android:layout_marginBottom="30dp"
+            android:text="สาขา  :  หนองบัวลำภู"
+            android:textAlignment="center"
+            android:textColor="@color/background_White"
+            tools:ignore="HardcodedText" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textView90"
+            android:layout_gravity="left"
+            android:background="@color/menu_bg"
+            android:divider="@null"
+            android:entries="@array/CustomerMenu"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded">
+
+        </ListView>
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

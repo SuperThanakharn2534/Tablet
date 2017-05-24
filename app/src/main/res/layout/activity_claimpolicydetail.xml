@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:id="@+id/drawerLayout">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView66"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textView64"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:gravity="center_vertical"
+                        android:text="ข้อมูลกรมธรรม์"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView65"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/textView67"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/textView68"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:gravity="center_vertical"
+                            android:text="OPD  คงเหลือใน กรมธรรม์"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            tools:ignore="DuplicateIds" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="APP ID"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="0000000001"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="สถานะ"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="ปกติ"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="สถานะจัดเก็บเบี้ย"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="0.00"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="บริษัท"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="test"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="แผนประกัน"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="501 - Silver"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="เริ่มคุ้มครอง"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="20/01/2559"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="ชื่อ - นามสกุล"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="สมชาย   ศรีสุข"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="เบอร์โทรศัพท์"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="0866637235"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="จังหวัด "
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="กทม"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="เลขที่บัตรประชาชน"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata11"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="100100124566"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="เลขบัตร  Co-Brand"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata12"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="484800059884"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="ชื่อผู้ชำระเบี้ย"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata13"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="สมชาย   ศรีสุข"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="วันเกิด"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata14"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="17/01/2530"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="อายุปัจจุบัน"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata15"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="30  ปี"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist16"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="อายุเมื่อทำประกัน"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata16"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="29  ปี"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist17"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="ตัวแทน"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata17"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="สมชาย  ใจดี"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist18"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="สาขา"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata18"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata2"
+                            android:text="หนองบัวลำภู"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtdatalist19"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="อายุกรมธรรม์"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/txtdata19"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@color/txtdata1"
+                            android:text="1  ปี"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/hiegth_Linearlayout"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textView69"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView71"
+                        android:layout_width="wrap_content"
+                        android:layout_height="59dp"
+                        android:layout_weight="0.78"
+                        android:gravity="center_vertical"
+                        android:text="     รายการเคลม"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/pluse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.06"
+                        android:src="@drawable/pluse"
+                        app:backgroundTint="@color/colorPrimary"
+                        app:layout_anchor="@id/pluse"
+                        app:layout_anchorGravity="bottom|right|end" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView73"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <TextView
+                        android:id="@+id/textView76"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.78" />
+
+                    <TextView
+                        android:id="@+id/textView72"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="เลขที่การเคลม : CL123456 ประเภท : OPD ทั่วไป สถานพยาบาล : โรงพยาบาลราชิวิถี การวินิจฉัย : กล้ามเนื้ออักเสบ Status : อนุมัติ วันที่เข้าโรงพยาบาล : 03/04/2560 "
+                        android:textSize="@dimen/text_size" />
+
+                    <TextView
+                        android:id="@+id/textView74"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/btDescription"
+                        android:layout_width="265dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button"
+                        android:text="ดูรายละเอียด"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView75"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/menu_bg"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/menu_bg"
+            app:srcCompat="@drawable/editpassword"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView91"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView15"
+            android:gravity="bottom"
+            android:text="Somsee  Jaidee"
+            android:textAlignment="center"
+            android:textColor="@color/background_White"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView172"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView91"
+            android:gravity="center_vertical"
+            android:text="รหัส  : 09876"
+            android:textAlignment="center"
+            android:textColor="@color/background_White"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView89"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView172"
+            android:text="ทีมลูก  :  น้ำโขง"
+            android:textAlignment="center"
+            android:textColor="@color/background_White"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView90"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView89"
+            android:layout_marginBottom="30dp"
+            android:text="สาขา  :  หนองบัวลำภู"
+            android:textAlignment="center"
+            android:textColor="@color/background_White"
+            tools:ignore="HardcodedText" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textView90"
+            android:layout_gravity="left"
+            android:background="@color/menu_bg"
+            android:divider="@null"
+            android:entries="@array/CustomerMenu"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded">
+
+        </ListView>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

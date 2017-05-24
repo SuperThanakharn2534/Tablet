@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="@color/background_White"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:ignore="UseCompoundDrawables">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:background="@color/background_White"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView175"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Product SiamSmile Card"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_White"
+            android:orientation="horizontal"
+            tools:ignore="InefficientWeight">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="283dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/person"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView172"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="36sp"
+                tools:ignore="InefficientWeight" />
+
+            <Button
+                android:id="@+id/btswipe"
+                android:layout_width="429dp"
+                android:layout_height="@dimen/button_layout_height"
+                android:layout_margin="30dp"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:text="กดเพื่อดูรายละเอียด"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,InefficientWeight,SpUsage" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

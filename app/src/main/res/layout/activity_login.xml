@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="630dp"
+            android:layout_gravity="center"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            tools:ignore="UselessParent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:weightSum="1"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/img_siamsmile"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="30dp"
+                    android:layout_weight="0.15"
+                    tools:ignore="InefficientWeight">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="RtlHardcoded">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                tools:ignore="InefficientWeight">
+
+                                <EditText
+                                    android:id="@+id/txtUsername"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:hint="USERNAME"
+                                    android:inputType="textPersonName"
+                                    android:textAllCaps="false"
+                                    android:textColor="@android:color/darker_gray"
+                                    android:textSize="@dimen/edittext"
+                                    tools:ignore="HardcodedText,SpUsage" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/txtPassword"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:hint="PASSWORD"
+                                    android:inputType="textPassword"
+                                    android:textSize="@dimen/edittext"
+                                    tools:ignore="HardcodedText,SpUsage" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtmessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:gravity="center_vertical"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <Button
+                                android:id="@+id/btLogIn"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/button_layout_height"
+                                android:background="@drawable/button"
+                                android:drawablePadding="15dp"
+                                android:elevation="1dp"
+                                android:text="Login"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/background_light"
+                                android:textSize="@dimen/button_text_size"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText,SpUsage,UnusedAttribute" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="269dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/btForgetP"
+                        android:layout_width="269dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="0.44"
+                        android:background="@android:color/background_light"
+                        android:drawablePadding="2dp"
+                        android:text="ลืมรหัสผ่าน"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textlink"
+                        tools:ignore="ButtonStyle,HardcodedText,InefficientWeight,SpUsage" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

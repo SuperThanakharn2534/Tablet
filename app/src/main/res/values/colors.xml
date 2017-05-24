@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#33b5e5</color>
+    <color name="colorPrimaryDark">#33b5e5</color>
+    <color name="colorAccent">#0a5aaf</color>
+    <color name="text_highlight1">#ff47b2</color>
+    <color name="text_highlight2">#defbf5</color>
+    <color name="mainbrackground">#fcfafa</color>
+    <color name="menu_bg">#bebebe</color>
+    <color name="background_White">#ffffff</color>
+    <color name="headertitle">#90000000</color>
+    <color name="txtdata1">#87CEFA</color>
+    <color name="txtdata2">#B0E2FF</color>
+
+
+</resources>

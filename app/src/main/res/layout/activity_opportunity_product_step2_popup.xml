@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_White"
+    android:orientation="vertical"
+    app:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:gravity="center"
+            android:text="เปอร์เซ็นต์ความสนใจของลูกค้า"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="#ededed"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@android:color/background_light"
+                android:orientation="horizontal"
+                tools:ignore="InefficientWeight,NestedWeights">
+
+                <Spinner
+                    android:id="@+id/spinner4"
+                    android:layout_width="328dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    tools:ignore="InefficientWeight,NestedWeights" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/call"
+                tools:ignore="ContentDescription,InefficientWeight,NestedWeights" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.00"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btBrowseImg"
+                android:layout_width="315dp"
+                android:layout_height="@dimen/button_layout_height"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:text="Browse File Image"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/button_text_size"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle,HardcodedText,NestedWeights,SpUsage" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.01"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btConfirm"
+                android:layout_width="315dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="ตกลง"
+                android:textColor="@color/background_White"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle,HardcodedText,NestedWeights" />
+
+            <TextView
+                android:id="@+id/textView171"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20" />
+
+            <Button
+                android:id="@+id/btCancle"
+                android:layout_width="315dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/button"
+                android:text="ยกเลิก"
+                android:textColor="@color/background_White"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

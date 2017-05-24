@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_send1"
+            android:icon="@drawable/p1"
+            android:title="ผู้มุ่งหวัง / ปิดการขาย"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_send2"
+            android:icon="@drawable/p2"
+            android:title="บริการเครมสุขภาพ"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_send3"
+            android:icon="@drawable/p3"
+            android:title="จัดเก็บเบี้ยค้างชำระ"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/p4"
+            android:title="ประกาศ / ข้อมูลการแข่งขัน"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/p5"
+            android:title="ติดต่อสอบถามข้อมูลเพิ่มเติม"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/p6"
+            android:title="ข้อเสนอแนะ / ร้องเรียน"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/p7"
+            android:title="แก้ไข  PASSWORD"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/p8"
+            android:title="Log Out"
+            tools:ignore="HardcodedText" />
+    </group>
+
+</menu>
